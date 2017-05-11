@@ -1,0 +1,101 @@
+/*.front_img {
+    position: relative;
+    margin: auto;
+    max-width 100%;
+
+}*/
+
+.front_img{
+  margin-top: 110px;
+  background-image: url("img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  max-width: 100%;
+}
+
+.caption{
+padding-top: 5%;
+text-align: center;
+color:white;
+}
+
+/*.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+.hero-text{
+  color: white;
+}*/
+
+.btn-sharp {
+  border-radius:0;
+  border-style: none;
+  margin-top: auto;
+}
+
+h1{
+  font-size: 75px;
+  margin-bottom: 40px;
+}
+
+span{
+  font-size: 25px;
+}
+
+.midway{
+  margin-top: 20px;
+}
+
+div p{
+  margin-top: 5px;
+}
+
+.footer_header{
+  /*margin-top: 5px;*/
+  font-size: 20px;
+  /*margin-bottom: 5px;*/
+  max-height: 100px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.footer_text{
+  color: white;
+  text-align: left;
+}
+
+.footer_links{
+  margin-top:10px;
+  text-align: right;
+}
+
+.copyright{
+margin-left: 10px;
+}
+
+.copyright_text{
+  color: white;
+  font-size: 10px;
+}
+
+.big_footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 130px;
+}
+
+.navy{
+  background-color: navy;
+}
+
+body{
+  margin-bottom: 100px;
+}

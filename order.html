@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Galvanize Delivers</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Galvanize Delivers</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="order.html">Order Delivery</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h2>Menu</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="/img/burger.jpg" alt="Card image cap">
+              <div class="container">
+                <h4 class="card-title">Royal with Cheese</h4>
+                <p class="card-subtitle">$8.99</p>
+              <button type="button" name="Royal with Cheese" class="btn">ADD TO ORDER</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="/img/pizza.jpg" alt="Card image cap">
+              <div class="container">
+                <h4 class="card-title">Arugula Pie</h4>
+                <p class="card-subtitle">$11.99</p>
+                <button type="button" name="Arugula Pie" class="btn">ADD TO ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="/img/ribs.jpg" alt="Card image cap">
+              <div class="container">
+                <h4 class="card-title">Smoked Swine</h4>
+                <p class="card-subtitle">$14.99</p>
+              <button type="button" name="Smoked Swine" class="btn">ADD TO ORDER</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="/img/ice_cream.jpg" alt="Card image cap">
+              <div class="container">
+                <h4 class="card-title">Ice Cream Biscuit</h4>
+                <p class="card-subtitle">$7.99</p>
+                <button type="button" name="Ice Cream Biscuit" class="btn">ADD TO ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h2>Order</h2>
+        <div class="row">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+              <th>Items</th>
+              <th class="tbl-ele-right">Price</th>
+            </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="tbl-ele-right">Subtotal</td>
+                <td id="subtotal" class="tbl-ele-right">$0.00</td>
+              </tr>
+              <tr>
+                <td class="tbl-ele-right">Tax</td>
+                <td id="tax" class="tbl-ele-right">$0.00</td>
+              </tr>
+              <tr>
+                <td class="tbl-ele-right">Total</td>
+                <td id="total" class="tbl-ele-right">$0.00</td>
+              </tr>
+            </tfoot>
+          </table>
+          <fieldset>
+          <form id="form" class="" action="index.html" method="post">
+            <div class="form-group">
+            <label for="name">Name:</label>
+            <input class="form-control" type="text" name="name" value="">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input class="form-control" type="" name="phone" value="">
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input class="form-control" type="" name="address" value="">
+          </div>
+          <button class="btn-lg btn-primary btn-sharp" type="submit" name="button">Place Order</button>
+          </form>
+        </div>
+        </div>
+    </fieldset>
+    </div>
+    <div id="snackbar">Some text some message..</div>
+  </div>
+
+    <footer class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="row bg-primary">
+        <div class="col-xs-6">
+            <h6 class="footer_header">Galvanize Delivers</h6>
+            <h6>Fine Dining, Delivered.</h6>
+        </div>
+        <div class="col-xs-6 text-left">
+          <ul class = "footer_links">
+            <li><a href="index.html" class="footer_text">Home</a></li>
+            <li><a href="order.html" class="footer_text">Order Delivery</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="row navy">
+      <span class=' copyright glyphicon glyphicon-copyright-mark copyright_text'></span>
+      <span class="copyright_text">2016 Galvanize Delivers</span>
+    </div>
+
+</body>
+
+<script src="order.js"></script>
+</html>
